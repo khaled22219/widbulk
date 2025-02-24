@@ -20,7 +20,7 @@ where {it:string } is the directory path where the downloaded zipped data will b
 {title:Description }
 
 {p 4 4 2}
-{cmd:widbulk } is a user-contributed Stata command that allows bulk downloading and unzipping of the most up-to-date data from the World Inequality Database (WID). The program downloads a ZIP file containing all WID data (series data, metadata, etc.), then creates a {bf:Raw Data} folder inside the specified directory where the data will be locally extracted and saved. If no directory is specified using the {cmd:savepath } option, or if the {cmd:savepath } option itself is not specified, the {bf:Raw Data} folder along with the extracted data will be saved in the current working directory.
+{cmd:widbulk } is a user-contributed Stata command that allows bulk downloading and unzipping of the most up-to-date data from the World Inequality Database (WID). The program downloads a ZIP file containing all WID data (series data, metadata, etc.), then creates a {bf:Raw Data} folder inside the specified directory where the data will be locally extracted and saved. If no directory is specified using the {cmd:savepath} option, or if the option itself is not specified, the {bf:Raw Data} folder along with the extracted data will be saved in the current working directory.
 
 {title:Options }
 
