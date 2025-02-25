@@ -1,10 +1,11 @@
 # widbulk - Bulk Data Download from the World Inequality Database (WID)
 # Overview:
-widbulk is a Stata module designed to facilitate the bulk downloading and extraction of data from the World Inequality Database (WID). The module retrieves the most up-to-date version of the WID data including data series and metadata, extracts its contents, and stores them in a designated "Raw Folder" directory for further use in Stata.
+widbulk is a Stata module designed to facilitate the bulk downloading and extraction of data from the World Inequality Database (WID.world). The module retrieves the latest version of WID data directly from the WID.world website, including data series and metadata, extracts its contents, and stores them in a designated "Raw Folder" directory for further use in Stata.
 
 # Description:
 widbulk is a user-contributed Stata command that automates the process of downloading and extracting the most recent WID dataset. Upon execution, the module:
 
-    1. Downloads the latest ZIP archive from the WID website.
-
-    2. Extracts the contents into a subdirectory named Raw Data inside the specified directory (or the current working directory if no path is provided).
+    1. Bulk downloads the data from the website.
+    2. Unzips the downloaded folder, creating a folder named Raw Data, where all CSV files will be stored.
+    3. Checks for duplicates and keeps only the one with full data (ignoring empty CSV files).
+    4. Saves the data in the current directory by default, or allows you to specify a save location using the savepath option.
